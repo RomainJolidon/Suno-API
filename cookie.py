@@ -55,8 +55,8 @@ def update_token(suno_cookie: SunoCookie):
     suno_cookie.load_cookie(set_cookie)
     token = resp.json().get("jwt")
     suno_cookie.set_token(token)
-    print(set_cookie)
-    print(f"*** token -> {token} ***")
+    # print(set_cookie)
+    # print(f"*** token -> {token} ***")
 
 
 def keep_alive(suno_cookie: SunoCookie):
