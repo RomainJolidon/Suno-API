@@ -62,7 +62,7 @@ def update_token(suno_cookie: SunoCookie):
 def keep_alive(suno_cookie: SunoCookie):
     while True:
         try:
-            print('keep alive')
+            # print('keep alive')
             update_token(suno_cookie)
         except Exception as e:
             print(e)
